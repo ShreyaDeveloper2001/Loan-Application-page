@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Confirmation</h2>
+        <p id="confirmationMessage"></p>
+        <form id="otpForm">
+            <label for="otp">Enter OTP:</label>
+            <input type="text" id="otp" name="otp" required>
+            <button type="submit">Validate</button>
+            <span id="otpError" class="error-message"></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

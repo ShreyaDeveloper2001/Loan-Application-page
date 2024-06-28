@@ -1,0 +1,115 @@
+/* General Styles for the Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Styles for Heading (h2) */
+h2 {
+    text-align: center;
+    color: #00796b;
+}
+
+/* Styles for the Form Container */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px; /* Padding inside the container */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%; /* Sets the width of the form container to fill 100% of its parent */
+    max-width: 400px;  /* Maximum width */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Additional Styles for the Heading within the Form Container */
+.form-container h2 {
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Label styling */
+label {
+    display: block; /* Forces the label to take up the full width of the container */
+    font-weight: bold; /* Adds a bottom margin to separate the label from the input field */
+    margin-bottom: 5px;
+    color: #00796b;
+}
+
+/* Input and button styling */
+input[type="text"], input[type="email"], input[type="number"], button[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Input focus state */
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+    border-color: #00796b; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #00796b;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Submit button hover state */
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Specific Styles for Confirmation Page */
+
+#confirmationMessage {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#otpError {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Amount in words */
+#amountInWords {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #00796b;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], button[type="submit"] {
+        padding: 8px; /* Reduce padding */
+    }
+}
